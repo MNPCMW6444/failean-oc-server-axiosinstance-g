@@ -1,21 +1,21 @@
 {
   "name": "@failean/oc-server-axiosinstance",
-  "version": "5.5.59",
+  "version": "5.5.60",
   "description": "axios instance of oc server laod balancer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prebuild": "npm run version:patch",
     "version:patch": "npm version patch --no-git-tag-version",
     "version:minor": "npm version minor --no-git-tag-version",
     "version:major": "npm version major --no-git-tag-version",
-    "preupdate": "npx npm-check-updates -u",
     "update": "npm i",
-    "clean": "rm -rf node_modules package-lock.json",
-    "cleanbuild": "rm -rf dist",
+    "preupdate": "npx npm-check-updates -u",
     "pub": "npm publish",
     "prepub": "npm run build",
-    "build": "npm run cleanbuild && tsc && cp package.json ./dist"
+    "cleanbuild": "rm -rf dist",
+    "clean": "rm -rf node_modules package-lock.json",
+    "build": "npm run cleanbuild && tsc && cp package.json ./dist",
+    "prebuild": "npm run update && npm run version:patch"
   },
   "repository": {
     "type": "git",
@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/failean/mongo-models#readme",
   "dependencies": {
-    "axios": "^1.4.0",
-    "typescript": "^5.1.6"
+    "axios": "^1.5.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@types/node": "^20.5.1"
+    "@types/node": "^20.5.9"
   }
 }
