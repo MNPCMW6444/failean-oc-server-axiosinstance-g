@@ -1,9 +1,10 @@
 {
   "name": "@failean/oc-server-axiosinstance",
-  "version": "5.5.62",
+  "version": "5.5.66",
   "description": "axios instance of oc server laod balancer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "version:patch": "npm version patch --no-git-tag-version",
     "version:minor": "npm version minor --no-git-tag-version",
