@@ -1,6 +1,6 @@
 {
   "name": "@failean/oc-server-axiosinstance",
-  "version": "5.5.60",
+  "version": "5.5.62",
   "description": "axios instance of oc server laod balancer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,6 +32,6 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@types/node": "^20.5.9"
+    "@types/node": "^20.6.2"
   }
 }
